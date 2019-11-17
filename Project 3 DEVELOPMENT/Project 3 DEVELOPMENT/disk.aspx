@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Disk" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="disk,aspx.aspx.cs" Inherits="Project_3_DEVELOPMENT.disk_aspx" %>
+﻿<%@ Page Title="Disk" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="disk.aspx.cs" Inherits="Project_3_DEVELOPMENT.disk_aspx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <%-- Disk page creates a list view displaying the current disks and allows for the use of stored procedures to insert, update, and delete disks --%>

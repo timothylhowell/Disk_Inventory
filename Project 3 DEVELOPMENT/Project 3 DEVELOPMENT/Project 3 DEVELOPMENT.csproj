@@ -82,7 +82,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\site.css" />
-    <Content Include="disk,aspx.aspx" />
+    <Content Include="disk.aspx" />
     <Content Include="home.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -146,12 +146,12 @@
     <Compile Include="borrower.aspx.designer.cs">
       <DependentUpon>borrower.aspx</DependentUpon>
     </Compile>
-    <Compile Include="disk,aspx.aspx.cs">
-      <DependentUpon>disk,aspx.aspx</DependentUpon>
+    <Compile Include="disk.aspx.cs">
+      <DependentUpon>disk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="disk,aspx.aspx.designer.cs">
-      <DependentUpon>disk,aspx.aspx</DependentUpon>
+    <Compile Include="disk.aspx.designer.cs">
+      <DependentUpon>disk.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
