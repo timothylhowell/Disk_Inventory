@@ -1,0 +1,17 @@
+﻿.container {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.nav > li > a {
+    color: #8c8c8c;
+    font-weight: 600;
+}
+
+.btn {
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: normal;
+}
