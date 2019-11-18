@@ -1629,7 +1629,7 @@ GO
 CREATE PROC sp_InsertBorrower
 @borrowerFirstName varchar(32),
 @borrowerLastName varchar(32),
-@borrowerPhone char(10)
+@borrowerPhone char(12)
 AS
 BEGIN TRY
 INSERT INTO [dbo].[Borrowers]
@@ -1661,7 +1661,7 @@ GO
 CREATE PROC sp_UpdateBorrower
 @borrowerFirstName varchar(32),
 @borrowerLastName varchar(32),
-@borrowerPhone char(10),
+@borrowerPhone char(12),
 @targetBorrower int
 AS
 BEGIN TRY
