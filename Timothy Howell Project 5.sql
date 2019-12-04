@@ -1806,3 +1806,51 @@ GO
 --Example, deletes disk 23
 EXEC sp_DeleteDisk 23
 GO
+
+
+
+--Checkout procedure for disks
+DROP PROC IF EXISTS sp_CheckoutDisk
+GO
+CREATE PROC sp_CheckoutDisk
+@diskID int
+AS
+BEGIN TRY
+UPDATE [dbo].[Disks]
+   SET [statusID] = 2
+ WHERE diskID = @diskID
+END TRY
+BEGIN CATCH
+PRINT 'An error occurred. Disk was not checked out.';
+    PRINT 'Error number: ' +
+        CONVERT(varchar(256), ERROR_NUMBER());
+    PRINT 'Error message: ' +
+        CONVERT(varchar(256), ERROR_MESSAGE());
+END CATCH
+GO
+
+--Checkout procedure for Borrowed Disks
+DROP PROC IF EXISTS sp_BorrowDisk
+GO
+CREATE PROC sp_BorrowDisk
+@borrowerID int,
+@diskID int
+AS
+BEGIN TRY
+INSERT INTO [dbo].[Borrowed_Disks]
+           ([borrowerID]
+           ,[diskID]
+           ,[borrowedDate])
+     VALUES
+           (@borrowerID
+           ,@diskID
+           ,GETDATE())
+END TRY
+BEGIN CATCH
+PRINT 'An error occurred. Borrowed disk was not inserted.';
+    PRINT 'Error number: ' +
+        CONVERT(varchar(256), ERROR_NUMBER());
+    PRINT 'Error message: ' +
+        CONVERT(varchar(256), ERROR_MESSAGE());
+END CATCH
+GO

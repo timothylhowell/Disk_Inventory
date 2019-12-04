@@ -56,6 +56,7 @@
                         <li><a runat="server" href="~/Management/Artist">Artist</a></li>
                         <li><a runat="server" href="~/Management/Borrower">Borrower</a></li>
                         <li><a runat="server" href="~/Management/Disk">Disk</a></li>
+                        <li><a runat="server" href="~/Management/Checkout">Disk Checkout</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>

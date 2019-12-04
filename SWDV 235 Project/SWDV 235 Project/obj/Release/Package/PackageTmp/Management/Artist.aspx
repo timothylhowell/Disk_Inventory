@@ -2,6 +2,8 @@
 <%-- Artist page creates a list view displaying the current artists and allows for the use of stored procedures to insert, update, and delete artists --%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+
     <h1>Artists</h1>
 
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="artistID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">

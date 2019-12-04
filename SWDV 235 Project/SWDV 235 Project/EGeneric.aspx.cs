@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SWDV_235_Project
 {
-    public partial class Artist : System.Web.UI.Page
+    public partial class EGeneric : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
     }
 }

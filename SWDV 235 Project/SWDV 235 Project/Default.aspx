@@ -2,6 +2,17 @@
 <%-- 
     CHANGE LOG
 ------------------------------------------------------------
+
+    Version 4
+----------------
+    Added basic http error handling in web.config
+    Added Checkout page
+    Added stored procedures to handle checkouts
+    Added code for the checkout button to run the checkout
+
+
+
+
     Version 3
 ----------------
     Changed to template to use user accounts and user validation
