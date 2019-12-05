@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="SWDV_235_Project.Checkout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <%--Cr5eates dropdown boxes and data sources for borrowers and disks and a button to run checkout--%>
-
+    <%--Creates dropdown boxes and data sources for borrowers and disks and a button to run checkout--%>
+    <h1>Checkout</h1>
     <p>
         &nbsp;</p>
     <p>
@@ -30,11 +30,10 @@
     <br />
     <br />
     <p>
-        &nbsp;</p>
-    <p>
         Select a Checkout Date:</p>
     <p>
         <asp:TextBox ID="txtDate" runat="server" TextMode="Date"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDate" CssClass="text-danger" ErrorMessage="Please select a date"></asp:RequiredFieldValidator>
     </p>
     <p>
         &nbsp;</p>

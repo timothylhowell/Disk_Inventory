@@ -47,5 +47,5 @@
 --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Home</h1>
-    <p>Welcome to the homepage for Disk Inventory. Use the pages to the left to add, edit, or delete the related data from the related tables.</p>
+    <p>Welcome to the homepage for Disk Inventory. Use the pages to the left to add, edit, delete, or checkout from the related tables.</p>
 </asp:Content>
